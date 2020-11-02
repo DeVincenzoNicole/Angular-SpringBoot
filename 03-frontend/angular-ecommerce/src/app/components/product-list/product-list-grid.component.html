@@ -3,7 +3,28 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- lista de productos -->
-                <p> I have work to do </p>
+                <div *ngFor="let tempProduct of products" class="col-md-3">
+                    
+                    <div class="product-box">
+                        
+                        <a routerLink="/products/{{ tempProduct.id }}">
+                            <img src="{{ tempProduct.imageUrl }}" class="img-responsive">
+                        </a>
+                        <a routerLink="/products/{{ tempProduct.id }}">
+                            <h1>{{tempProduct.name}}</h1>
+                        </a>
+                        
+                        <div class="price">{{ tempProduct.unitPrice}}</div>
+                        <a href="#" class="primary-btn"> Add to cart </a>
+                    </div>
+                </div>
+
+                    <!--Si no se encuentra ningún producto que coincida con la busqueda-->
+                    <!-- El ? en products? sirve para evitar errores nulos o indefinidos -->
+                    <div *ngIf="products?.length == 0" class="alert alert-warning col-md-12" role="alert">
+                        No products found.
+                    </div> 
+                        
             </div>
         </div>
     </div>
