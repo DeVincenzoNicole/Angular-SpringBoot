@@ -38,6 +38,53 @@ input{
     border:none
 }
 
+.content-input input,
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.content-select select::-ms-expand {
+    display: none;
+}
+
+.content-select{
+	position: relative;
+}
+ 
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+}
+ 
+.content-select i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:2px solid #0da8e4;
+	border-bottom:2px solid #0da8e4;
+	transform: rotate(-45deg);
+	transition: all 0.25s ease;
+}
+ 
+
 button{
     border:none;
     background:0 0
@@ -537,12 +584,16 @@ input.au-input.au-input-xl{
     margin-left: 5px;
 }
 .product-box{
-    margin-bottom:60px
+    margin-bottom:60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .price{
-    margin:15px 0 0;
+    margin: 0 0 5px;
     font-weight:800;
-    color:#0da8e4
+    color:#0da8e4;
+    text-align: center;
 }
 .product-box h1{
     font-size:18px;
@@ -559,6 +610,12 @@ input.au-input.au-input-xl{
     color:#585858
 }
 
+.cntr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 /* 
  * ----------------------------
  * Shopping Cart Checkout
@@ -593,7 +650,7 @@ input.au-input.au-input-xl{
 .input-space input[type=text]{
     width:100%;
     height:40px;
-    border-radius:30px;
+    border-radius:10px;
     outline:0;
     padding:10px;
     border:1px solid #ccc
@@ -601,7 +658,7 @@ input.au-input.au-input-xl{
 .input-space select{
     width:100%;
     height:40px;
-    border-radius:30px;
+    border-radius:10px;
     outline:0;
     padding:0 10px;
     border:1px solid #ccc
@@ -725,6 +782,9 @@ table.table.table-bordered th{
 
 .detail-img {
     width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 /**/
