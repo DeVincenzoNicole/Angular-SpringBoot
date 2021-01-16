@@ -1,17 +1,17 @@
 # Título
-"LuvStore" E-Commerce Full-Stack - Tienda de libros y accesorios desarrollada con Angular & Spring Boot
+<p>"LuvStore" E-Commerce Full-Stack - Tienda de libros y accesorios desarrollada con Angular & Spring Boot</p>
 
 ## Descripción
-Esta tienda online fue desarrollada utilizando las siguientes herramientas: /n
+<p>Esta tienda online fue desarrollada utilizando las siguientes herramientas:</p>
 
-Front-End: 
+<p>Front-End: 
 - Angular
 - TypeScript 
 - HTML
 - CSS 
-- BootStrap
-/n
-Back-End:
+- BootStrap</p>
+
+<p>Back-End:
 - Java
 - Spring Boot 
 - Spring Data REST 
@@ -21,4 +21,4 @@ Back-End:
 - Hibernate 
 - JPA 
 - MySQL (local)
-- PostreSQL (deploy)
+- PostreSQL (deploy)</p>
