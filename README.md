@@ -1,17 +1,17 @@
 # Título
-<p>"LuvStore" E-Commerce Full-Stack - Tienda de libros y accesorios desarrollada con Angular & Spring Boot</p>
+"LuvStore" E-Commerce Full-Stack - Tienda de libros y accesorios desarrollada con Angular & Spring Boot
 
 ## Descripción
-<p>Esta tienda online fue desarrollada utilizando las siguientes herramientas:</p>
-
-<p>Front-End: 
+Esta tienda online fue desarrollada utilizando las siguientes herramientas:
+>
+Front-End: 
 - Angular
 - TypeScript 
 - HTML
 - CSS 
-- BootStrap</p>
-
-<p>Back-End:
+- BootStrap
+>
+Back-End:
 - Java
 - Spring Boot 
 - Spring Data REST 
@@ -21,4 +21,7 @@
 - Hibernate 
 - JPA 
 - MySQL (local)
-- PostreSQL (deploy)</p>
+- PostreSQL (deploy)
+
+## Deploy
+<https://angular-ecommerce-nicole.herokuapp.com/>
